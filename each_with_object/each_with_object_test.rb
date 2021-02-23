@@ -6,7 +6,7 @@ class EachWithObjectTest < MiniTest::Test
     assert_equal [2, 4, 6, 8, 10], (1..5).each_with_object([]) {|i, a| a << i * 2 }
   end
 
-  def test_when_memo_is_a_string
-    assert_equal 'Hello, ALICE', %w(a li ce).each_with_object('Hello, ') {|str, memo| memo << str.upcase }
-  end
+  # def test_when_memo_is_a_string
+  #   assert_equal 'Hello, ALICE', %w(a li ce).each_with_object('Hello, ') {|str, memo| memo << str.upcase }
+  # end
 end
